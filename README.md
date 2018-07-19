@@ -15,28 +15,17 @@ Les règles du jeu :
    * Le premier qui est obligé de prendre le dernier cailloux à perdu
 
 
-Utilisation
+# Utilisation
 
-Installer les gems :
+  ## Installer les gems :
 
-bundle install
+     bundle install
 
-Démarrer le script
+  ##Démarrer le script
 
-ruby app.rb
+  awale.rb démarre la partie
 
-
-A propos du projet
-
-
-app.rb démarre l'application, et rassemble les différentes parties entre elles
-db/ contient les fichiers json
-lib/ contient les classes utilisées pour le Scrapping, les tweets ainsi que l'envoi des mails
-
+  #A propos du projet
 
 
 Répartition des tâches
-
-Mailer :  Eangly ENG & Kwevan GOUACIDE
-Scrapping : Rémi BOIVIN & Jeremie EDERY
-Bot Twitter : Amélie FOULQUIER & Stéphane RABENARISOA
