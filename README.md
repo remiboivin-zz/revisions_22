@@ -1,7 +1,7 @@
 # Révision du Dimanche 22 Juillet 2018
 
 ### Contributeurs :
-*Rémi Boivin
+* Rémi Boivin
 
 Ce projet à pour but de réviser les notions de classes
 
