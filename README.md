@@ -21,9 +21,9 @@ Les règles du jeu :
 
      bundle install
 
-  ##Démarrer le script
+  ## Démarrer le script
 
-  awale.rb démarre la partie
+    * awale.rb démarre la partie
 
   #A propos du projet
 
