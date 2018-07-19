@@ -28,4 +28,6 @@ Les règles du jeu :
   ## A propos du projet
 
 
-Répartition des tâches
+## Répartition des tâches
+
+   * Rémi => Création de l'exercice
