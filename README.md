@@ -3,9 +3,8 @@
 ### Contributeurs :
 * Rémi Boivin
 
-Ce projet à pour but de réviser les notions de classes
-
-Nous avons choisi de créer un jeu qui s'appelle awalé :
+Ce projet à pour but de réviser les notions de classes nous avons donc choisi
+de créer un jeu qui s'appelle awalé :
 
     L'awalé est un jeu d'origine affricaine. Il ce compose d'un plateau de
     6 cases creuses (3 cases de chaque cotés) et d'un certain nombre de cailloux
