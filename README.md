@@ -23,9 +23,9 @@ Les règles du jeu :
 
   ## Démarrer le script
 
-    * awale.rb démarre la partie
+    awale.rb démarre la partie
 
-  #A propos du projet
+  ## A propos du projet
 
 
 Répartition des tâches
