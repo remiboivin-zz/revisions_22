@@ -26,33 +26,31 @@ de créer un jeu qui s'appelle awalé :
 
     awale.rb démarre la partie
 
-  ## A propos du projet
+  ## Structure du programme
 
-     ### Structure du programme
+     * board
 
-         * board
+        ** Initialise 6 boardCase
+        ** Fait le lien entre boardCase et Game
+        ** Change l'état des instances boardCase
 
-          ** Initialise 6 boardCase
-          ** Fait le lien entre boardCase et Game
-          ** Change l'état des instances boardCase
+     * BoardCase
 
-         * BoardCase
+        ** Renseigne l'état de la case
+        ** Remplis la case de 4 cailloux à l'initialisation
 
-          ** Renseigne l'état de la case
-          ** Remplis la case de 4 cailloux à l'initialisation
+     * Player
 
-         * Player
+        ** Un nom
+        ** Un état
+        ** Un camp
 
-          ** Un nom
-          ** Un état
-          ** Un camp
+     * Game
 
-         * Game
-
-           ** Initialise une instance board
-           ** initialise deux instances player
-           ** Gère le jeu
-           ** check si un joueur à gagné
+        ** Initialise une instance board
+        ** initialise deux instances player
+        ** Gère le jeu
+        ** check si un joueur à gagné
 
 ## Répartition des tâches
 
