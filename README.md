@@ -45,6 +45,22 @@ de créer un jeu qui s'appelle awalé :
         ** Un état
         ** Un camp
 
+     * Rules
+
+        * Vérifie si le coup est permis ou non
+
+           ** Renvoit true si le coup est permis
+           ** false si le coup ne l'es pas
+
+              *** On n'a pas le droit d'affamer son adversaire
+              *** On ne peut pas sauter d'une case
+              *** On ne remplis pas la case où l'on prends les graines
+
+        * Si on tombe dans une case adverse et qu'il y a 2 ou 3 cailloux le joueur
+          les récupère et les mets de coté puis il regarde en arrière si il y a
+          2 ou 3 cailloux si il y a 2 ou 3 caillous il les prends il continue comme ça
+          jusqu'à revenir dans son camps ou qu'une des cases n'a pas assez de cailloux
+
      * Game
 
         ** Initialise une instance board
