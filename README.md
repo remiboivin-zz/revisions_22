@@ -28,6 +28,31 @@ de créer un jeu qui s'appelle awalé :
 
   ## A propos du projet
 
+     ### Structure du programme
+
+         * board
+
+          ** Initialise 6 boardCase
+          ** Fait le lien entre boardCase et Game
+          ** Change l'état des instances boardCase
+
+         * BoardCase
+
+          ** Renseigne l'état de la case
+          ** Remplis la case de 4 cailloux à l'initialisation
+
+         * Player
+
+          ** Un nom
+          ** Un état
+          ** Un camp
+
+         * Game
+
+           ** Initialise une instance board
+           ** initialise deux instances player
+           ** Gère le jeu
+           ** check si un joueur à gagné
 
 ## Répartition des tâches
 
