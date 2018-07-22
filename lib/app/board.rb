@@ -43,6 +43,8 @@ class Board
   end
 
   def rafle(pos)
+    if my_hash[pos].case
+  end
 
   def distribute(position, nbre, player)
     i = 1;
