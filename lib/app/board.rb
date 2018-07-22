@@ -60,6 +60,7 @@ class Board
         position = "A1"
         i = 0;
       end
+      position = @board_name[pos]
       pp "Combien de cailloux voulez-vous mettre dans la case #{@board_name[pos + i]}"
       nbr = gets.chomp.to_i
       if (nbre - nbr) >= 0
