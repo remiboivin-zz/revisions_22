@@ -23,7 +23,7 @@ class Board
     puts "               -----------------------------   -------------------------------    ---------------------------"
     puts "            1 |               " + @my_hash["A1"].status.to_s + "             |  |               " + @my_hash["B1"].status.to_s + "              |  |               " + @my_hash["C1"].status.to_s + "           |\n"
     puts "               -----------------------------   -------------------------------    ---------------------------"
-    puts "            2 |               " + @my_hash["A2"].status.to_s + "             |  |               " + @my_hash["B2"].status.to_s + "              |   |              " + @my_hash["C2"].status.to_s + "           |\n"
+    puts "            2 |               " + @my_hash["C2"].status.to_s + "             |  |               " + @my_hash["B2"].status.to_s + "              |   |              " + @my_hash["A2"].status.to_s + "           |\n"
     puts "               -----------------------------   -------------------------------     ---------------------------"  end
 
   def subtract_case(nbre,pos)
