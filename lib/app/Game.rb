@@ -18,6 +18,7 @@ class Game
   end
 
   def test(player)
+      @board_case.print_board
     puts "C'est à " + player.name
     puts "" + player.name + "Entre ton choix"
     choice = gets.chomp.to_s
@@ -35,7 +36,6 @@ class Game
 
   def play
     while true
-      @board_case.print_board
       player_back = @player1.name
       if player_back.eql? @player1.name
         player_back = test(@player2)
