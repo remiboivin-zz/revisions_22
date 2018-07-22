@@ -28,7 +28,8 @@ class Game
         if choice.eql? "A1" or choice.eql? "B1" or choice.eql? "C1" or choice.eql? "A2" or choice.eql? "B2" or choice.eql? "C2"
           puts "Combien de graines tu veux prendre ?"
           choice_graines = gets.chomp.to_i
-          if @board_case.update_case(choice_graines, choice) == true
+          if @board_case.subtract_case(choice_graines, choice) == true
+            @board_case.distribute(choice, choice_graines)
             player_back = @player2.name
           else
             player_back = @player1.name
@@ -45,7 +46,7 @@ class Game
         if choice.eql? "A1" or choice.eql? "B1" or choice.eql? "C1" or choice.eql? "A2" or choice.eql? "B2" or choice.eql? "C2"
           puts "Combiens de graines tu veux prende ?"
           choice_graines = gets.chomp.to_i
-          if @board_case.update_case(choice_graines, choice) == true
+          if @board_case.subtract_case(choice_graines, choice) == true
             player_back = @player1.name
           else
             player_back = @player2.name

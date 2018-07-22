@@ -8,12 +8,19 @@ class BoardCase
     return @case
   end
 
-  def edit_case(nbre)
+  def name
+    return @name
+  end
+
+  def subtract_case(nbre)
     if nbre > @case
       return false
     else
       @case -= nbre
       return true
     end
+  end
+  def add(nbre)
+    @case += nbre
   end
 end
