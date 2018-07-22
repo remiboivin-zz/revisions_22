@@ -50,7 +50,7 @@ class Board
   end
 
   def distribute(position, nbre, player)
-    i = 1;
+    i = 2;
     nbr = 0
     pos = convert_text_to_pos(position)
     len = @board_name.size - 1
