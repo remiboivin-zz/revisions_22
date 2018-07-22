@@ -55,7 +55,7 @@ class Board
     pos = convert_text_to_pos(position)
     len = @board_name.size - 1
     while nbre > 0
-      if position.eql? "A2" or @board_name[pos + i] == nil
+      if position.eql? "C2" or @board_name[pos + i] == nil
         pos = 0;
         position = "A1"
         i = 0;
