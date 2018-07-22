@@ -8,10 +8,6 @@ class BoardCase
     return @case
   end
 
-  def name
-    return @name
-  end
-
   def subtract_case(nbre)
     if nbre > @case
       return false
