@@ -1,4 +1,5 @@
 # coding: utf-8
+
 require "./lib/app/Player"
 require "./lib/app/board"
 class Game
@@ -25,7 +26,7 @@ class Game
         puts "" + @player2.name + "Entre ton choix"
         choice = gets.chomp.to_s
         if choice.eql? "A1" or choice.eql? "B1" or choice.eql? "C1" or choice.eql? "A2" or choice.eql? "B2" or choice.eql? "C2"
-          puts "Combiens de graines tu veux prende ?"
+          puts "Combien de graines tu veux prendre ?"
           choice_graines = gets.chomp.to_i
           if @board_case.update_case(choice_graines, choice) == true
             player_back = @player2.name
@@ -33,7 +34,7 @@ class Game
             player_back = @player1.name
           end
       else
-        puts "erreur"
+        puts choice + " introuvable"
       end
       end
       if player_back.eql? @player2.name
