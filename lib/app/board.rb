@@ -71,6 +71,7 @@ class Board
     end
     unless player.camp.include?(@board_name[pos]) # check que la dernière case n'est pas dans notre camp
       puts "rafler les cailloux"
+      rafle(position)
     end
   end
 end
