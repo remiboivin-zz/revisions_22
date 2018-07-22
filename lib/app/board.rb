@@ -43,7 +43,9 @@ class Board
   end
 
   def rafle(pos)
-    if my_hash[pos].status
+    if my_hash[pos].status >= 2 or my_hash[pos].status <= 8
+
+    end
   end
 
   def distribute(position, nbre, player)
