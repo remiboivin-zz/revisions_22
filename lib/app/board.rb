@@ -11,7 +11,7 @@ class Board
                         BoardCase.new,
                         BoardCase.new]
     @board_name = ["A1","B1","C1",
-                   "C2","B2","A2"]
+                   "A2","B2","C2"]
     @my_hash = {}
     @board_name.each_with_index do |elem, index|
       @my_hash[elem] = @board_instances[index]
