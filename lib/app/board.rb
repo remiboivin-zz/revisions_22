@@ -42,15 +42,19 @@ class Board
     return i
   end
 
-  def distribute(position, nbre)
+  def distribute(position, nbre, player)
     i = 1;
     nbr = 0
     pos = convert_text_to_pos(position)
-    puts pos.to_s
+    len = @board_name.size - 1
     while nbre > 0
+      if position.eql? "C2" or @board_name[pos + i] == nil
+        pos = 0;
+        position = "A1"
+        i = 0;
+      end
       pp "Combien de cailloux voulez-vous mettre dans la case #{@board_name[pos + i]}"
       nbr = gets.chomp.to_i
-      puts nbre
       if (nbre - nbr) >= 0
         @my_hash[@board_name[pos + i]].add(nbr)
         nbre -= nbr
@@ -58,6 +62,9 @@ class Board
         puts "erreur"
       end
       i +=1
+    end
+    unless player.camp.include?(@board_name[pos]) # check que la dernière case n'est pas dans notre camp
+      puts "rafler les cailloux"
     end
   end
 end

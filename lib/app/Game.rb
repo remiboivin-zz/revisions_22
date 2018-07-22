@@ -17,44 +17,32 @@ class Game
     @board_case = Board.new
   end
 
-  def play
-    player_back = @player1.name
-    while true
-      @board_case.print_board
-      if player_back.eql? @player1.name
-        puts "C'est à " + @player2.name
-        puts "" + @player2.name + "Entre ton choix"
-        choice = gets.chomp.to_s
-        if choice.eql? "A1" or choice.eql? "B1" or choice.eql? "C1" or choice.eql? "A2" or choice.eql? "B2" or choice.eql? "C2"
-          puts "Combien de graines tu veux prendre ?"
-          choice_graines = gets.chomp.to_i
-          if @board_case.subtract_case(choice_graines, choice) == true
-            @board_case.distribute(choice, choice_graines)
-            player_back = @player2.name
-          else
-            player_back = @player1.name
-          end
+  def test(player)
+    puts "C'est à " + player.name
+    puts "" + player.name + "Entre ton choix"
+    choice = gets.chomp.to_s
+    if choice.eql? "A1" or choice.eql? "B1" or choice.eql? "C1" or choice.eql? "A2" or choice.eql? "B2" or choice.eql? "C2"
+      puts "Combien de graines tu veux prendre ?"
+      choice_graines = gets.chomp.to_i
+      if @board_case.subtract_case(choice_graines, choice) == true
+        @board_case.distribute(choice, choice_graines, player)
+        return player.name
       else
         puts choice + " introuvable"
       end
+    end
+  end
+
+  def play
+    while true
+      @board_case.print_board
+      player_back = @player1.name
+      if player_back.eql? @player1.name
+        player_back = test(@player2)
       end
       if player_back.eql? @player2.name
-        @board_case.print_board
-        puts "C'est à " + @player1.name + "\n"
-        puts "" + @player1.name + ": Entre ton choix\n"
-        choice = gets.chomp.to_s
-        if choice.eql? "A1" or choice.eql? "B1" or choice.eql? "C1" or choice.eql? "A2" or choice.eql? "B2" or choice.eql? "C2"
-          puts "Combiens de graines tu veux prende ?"
-          choice_graines = gets.chomp.to_i
-          if @board_case.subtract_case(choice_graines, choice) == true
-            player_back = @player1.name
-          else
-            player_back = @player2.name
-          end
-        else
-          puts "erreur"
-        end
+        player_back = test(@player1)
       end
     end
   end
-  end
+end

@@ -9,4 +9,8 @@ class Player
   def name
     return @name
   end
+
+  def camp
+    return @camp
+  end
 end
