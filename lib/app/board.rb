@@ -61,8 +61,7 @@ class Board
         i = 0;
       end
       position = @board_name[pos]
-      pp position
-      pp "Combien de cailloux voulez-vous mettre dans la case #{@board_name[pos + i]}"
+y      pp "Combien de cailloux voulez-vous mettre dans la case #{@board_name[pos + i]}"
       nbr = gets.chomp.to_i
       if (nbre - nbr) >= 0
         @my_hash[@board_name[pos + i]].add(nbr)
