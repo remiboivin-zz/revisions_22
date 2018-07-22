@@ -58,7 +58,7 @@ class Board
       if position.eql? "C2" or @board_name[pos + i] == nil
         pos = 0;
         position = "A1"
-        i = 1;
+        i = 0;
       end
       position = @board_name[pos]
       position = @board_name[pos + i]
