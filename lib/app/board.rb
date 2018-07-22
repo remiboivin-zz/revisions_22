@@ -61,7 +61,7 @@ class Board
         i = 0;
       end
       position = @board_name[pos]
-      position = @board_name[pos]
+      position = @board_name[pos + i]
       pp position
       pp "Combien de cailloux voulez-vous mettre dans la case #{@board_name[pos + i]}"
       nbr = gets.chomp.to_i
