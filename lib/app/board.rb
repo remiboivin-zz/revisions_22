@@ -11,7 +11,7 @@ class Board
                         BoardCase.new,
                         BoardCase.new]
     @board_name = ["A1","B1","C1",
-                   "A2","B2","C2"]
+                   "C2","B2","A2"]
     @my_hash = {}
     @board_name.each_with_index do |elem, index|
       @my_hash[elem] = @board_instances[index]
@@ -48,7 +48,7 @@ class Board
     pos = convert_text_to_pos(position)
     len = @board_name.size - 1
     while nbre > 0
-      if position.eql? "C2" or @board_name[pos + i] == nil
+      if position.eql? "A2" or @board_name[pos + i] == nil
         pos = 0;
         position = "A1"
         i = 0;
