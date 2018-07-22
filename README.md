@@ -18,7 +18,7 @@ de créer un jeu qui s'appelle awalé :
 
 ## Les règles du jeu :
 
-   * Il faut déplacer 1,2,3 ou 4 cailloux (au choix) dans les cases.
+   * Il faut déplacer un nombre de cailloux (au choix) dans les cases.
    * On est obligé de poser au moins un cailloux dans la case pour pouvoir passer à la suivante.
    * Le premier qui est obligé de prendre le dernier cailloux à perdu
 
