@@ -42,6 +42,8 @@ class Board
     return i
   end
 
+  def rafle(pos)
+
   def distribute(position, nbre, player)
     i = 1;
     nbr = 0
