@@ -59,7 +59,7 @@ class Board
         @my_hash[@board_name[pos + i]].add(nbr)
         nbre -= nbr
       else
-        puts "erreur"
+        puts "Tu ne peux pas prendre plus que tu en as"
       end
       i +=1
     end
