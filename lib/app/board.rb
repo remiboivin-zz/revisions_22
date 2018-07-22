@@ -43,7 +43,7 @@ class Board
   end
 
   def rafle(pos)
-    if my_hash[pos].status >= 2
+    if @ymy_hash[pos].status >= 2
       subtract_case(my_hash[pos].status - 1)
     end
   end
