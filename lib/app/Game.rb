@@ -18,7 +18,7 @@ class Game
   end
 
   def test(player)
-      @board_case.print_board
+    @board_case.print_board
     puts "C'est à " + player.name
     puts "" + player.name + "Entre ton choix"
     choice = gets.chomp.to_s
